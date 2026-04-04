@@ -13,5 +13,20 @@
 # print("Welcome, admin!")
 
 
-cars = ["Lexux", "BMW", "Mercedes", "Audi", "Porsche","Ferrari", "Lamborghini", "Maserati", "Bugatti", "Rolls-Royce"]
-print(cars[2::3])
+# cars = {"Lexux", "BMW", "Mercedes", "Audi", "Porsche","Ferrari", "Lamborghini", "Maserati", "Bugatti", "Rolls-Royce"}
+
+# cars[1] = "Tesla"
+# for car in cars:
+#     print(car)
+# cars.insert(2, "Tesla")
+# print(cars.count("Tesla"))
+# cars.sort()
+# print(cars)
+
+fruits = ["banana", "mango", "oranges", "carrot"]
+meats = ["chicken", "beef", "pork", "lamb"]
+vegatables = ["spinach", "kale", "broccoli", "cauliflower"]
+
+grocries = [fruits, meats, vegatables]
+print(grocries[0][1])
+  

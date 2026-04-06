@@ -1,43 +1,43 @@
-print("I Love Pizza")
+# print("I Love Pizza")
 
-#Strings
-last_name = "John"
-food = "rice"
-password = '123456789'
+# #Strings
+# last_name = "John"
+# food = "rice"
+# password = '123456789'
 
-print(f"Hello! {last_name},your favourite {food} is ready!")
+# print(f"Hello! {last_name},your favourite {food} is ready!")
 
-print(f" Your account password is {password}")
+# print(f" Your account password is {password}")
 
-#Integers
+# #Integers
 
-age = 30
-quantities = 100
-num_of_police = 100
+# age = 30
+# quantities = 100
+# num_of_police = 100
 
-print (f"You are {age} years old!")
-print (f"You bought {quantities} pack of biscuiut")
-print(f"There are {num_of_police} numbers of police")
+# print (f"You are {age} years old!")
+# print (f"You bought {quantities} pack of biscuiut")
+# print(f"There are {num_of_police} numbers of police")
 
-# Float
+# # Float
 
-cost = 99.99
-speed = 2.2
-gpa = 3.4
+# cost = 99.99
+# speed = 2.2
+# gpa = 3.4
 
-print(f"The shoe cost ${cost}")
-print(f"The jets top speed is mach {speed} ")
-print(f" Yor result is: {gpa} GPA")
+# print(f"The shoe cost ${cost}")
+# print(f"The jets top speed is mach {speed} ")
+# print(f" Yor result is: {gpa} GPA")
 
-# Boolean
-is_teacher = False
+# # Boolean
+# is_teacher = False
 
-if is_teacher :
-    print(f"You are a teacher, welcome")
-else:
-    print(f"You are not a teacher, Bye!!")
+# if is_teacher :
+#     print(f"You are a teacher, welcome")
+# else:
+#     print(f"You are not a teacher, Bye!!")
 
-    # # TypeCasting
+#     # # TypeCasting
 
     # name = "F-35A"
     # age = 6
@@ -63,9 +63,18 @@ else:
 
 # Area fo a rect cal
 
-length = float(input("Enter the length ?: "))
-width = float(input("Enter the width ?: "))
+# length = float(input("Enter the length ?: "))
+# width = float(input("Enter the width ?: "))
 
-area = length * width
+# area = length * width
 
-print(f"The area of this rectangle is: {area}cm²")
+# print(f"The area of this rectangle is: {area}cm²")
+
+numbers = [1, 2, 3, 4, 5, 6, 6, 7, 7, 7, 8, 9, 10]
+
+# for even_numbers in numbers:
+#     if even_numbers % 2 == 0 :
+#         print(even_numbers, end=" ")
+
+update = tuple(numbers)
+print(update)

@@ -128,23 +128,29 @@ numbers = [1, 2, 3, 4, 5, 6, 6, 7, 7, 7, 8, 9, 10]
 #Exception handling is an event that interrupt the flow of a program (
 #  ZeroDivisionError, TpeError, ValueError)
 
+# CSV means comma seperated values
+
 import json
+import csv
 
-employee = {
-   "Mark" : "Jude",
-   "job" : "Engineer",
-   "Marital" : "Married",
-   "Kids":"two"
-}
+employee = [["Name","Age", "Job"],
+            ["John", 100, "Driver"],
+            ["Kenechukwu", 10, "Plunber"],
+            ["Mark", 20, "Teacher"]
+            ]
 
 
-file_path = 'output.json'
+file_path = 'output.csv'
 
 
 try:
     with open(file_path, 'w') as file:
-         json.dump(employee, file, indent=4)
-         print(f"json file {'file_path'} was created")
+         writer = csv.writer(file)
+         for row in employee:
+              writer.writerow(row)
+        
+         
+         print(f"csv file {'file_path'} was created")
    
     
 except FileExistsError: 

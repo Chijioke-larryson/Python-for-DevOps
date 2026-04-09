@@ -1,0 +1,21 @@
+import requests
+
+servers = [
+    "http://google.com",
+    "http://github.com",
+    "http://facebook.com",
+    "http://x.com",
+    "http://linkedin.com",
+    "http://instagram.com",
+    "http://youtube11.com",
+]
+
+try:
+    for server in servers:
+        response = requests.get(server,timeout=5)
+        if response.status_code == 200:
+          print(f"{server} is UP!!")
+        else:
+           print(f"{server} is Down!!")
+except requests.exceptions.ExceptionRequest:
+    print(f"{server} is Down!!")
